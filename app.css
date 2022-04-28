@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header css */
+
+.clearfix {
+  width: 100%;
+  height: auto;  
+}
+
+.clearfix ul li {
+  display: inline-block;
+}
+
+.hvr:hover {
+  text-decoration: underline;
+}
+
+.clearfix .ri-grid-fill:hover {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+/* header left - nav */
+
+.header-left {
+  margin: 1.25rem 0;
+  float: left;
+}
+
+/* for both side a tags */
+
+.header-left a,
+.header-right a {
+  margin: 0 0.75em;
+  color: #5f6368;
+  font-size: 13px;
+}
+
+/* header right - nav - button*/
+
+.header-right {
+  margin: 1rem 1.25rem 1rem 0;
+  float: right;
+  position: relative;
+}
+
+.header-right ul {
+  margin: 1rem 1.25rem 1rem 0;
+  padding-left: 2.5rem;
+}
+
+.header-right i {
+  font-size: 2em;
+  position: relative;
+  top: 0.625rem;
+}
+
+#sign-in-btn {
+  background-color: #4285f4;
+  color: #ffff;
+  border: none;
+  width: 4.375rem;
+  height: 1.875rem;
+  border-radius: 4px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* main css */
+
+/* logo */
+
+#google-logo {
+  display: block;
+  margin: 6.81rem auto 0;
+}
+
+/* searchbar */
+
+.searchbar {
+  width: 36.25rem;
+  height: 2.5rem;
+  border: 1px solid lightgray;
+  border-radius: 1.5rem;
+  margin: 1.75rem auto;
+}
+
+.searchbar:hover {
+  box-shadow: 2px 1px 8px 1px rgba(0, 0, 0, 0.15);
+}
+
+#search {
+  height: 2rem;
+  width: 28.75rem;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  position: relative;  
+}
+
+#magnifier {
+  width: 1.5rem;
+  position: relative;
+  top: 0.58rem;
+  left: 0.58rem;
+}
+
+#keyboard {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#microphone {
+  height: 1.25rem;
+  position: relative;
+  top: 0.5rem;
+  left: 1.12rem;
+  cursor: pointer;
+}
+
+/* button container css */
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-1 {
+  height: 36px;
+  min-width: 120px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  padding: 1px 6px;}
+
+.btn-1:hover {
+  border: 1px solid rgb(185, 183, 183);
+}
+
+/* language / sub-search */
+
+.language {
+  text-align: center;
+}
+
+#language {
+  text-align: center;
+  margin-top: 32px;
+  font-size: small;
+}
+
+#language a {
+  color: #1967d2;
+}
+
+/* footer css */
+
+footer {
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 2.5rem;
+}
+
+.country {
+  border-bottom: 1px solid #e4e4e4;
+  padding-left: 30px;
+  color: #5f6368;
+}
+
+/* left side */
+
+.footer-left {
+  float: left;
+  margin: 0;
+  padding-left: 25px;
+  list-style-type: none;
+}
+
+.footer-left li {
+  display: inline-block;
+  margin: 0 0.75em;
+}
+
+.footer-left a {
+  color: #5f6368;
+  font-size: 0.85em;
+}
+
+/* right side */
+
+.footer-right {
+  float: right;
+  margin: 0 12px 0 0;
+  padding-right: 25px;
+  list-style-type: none;
+}
+
+.footer-right li {
+  display: inline-block;
+  margin: 0 0.85em;
+}
+
+.footer-right a {
+  color: #5f6368;
+  font-size: 0.75em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* responsiveness */
+
+/* header responsiveness */
+
+@media screen and (max-width: 520px) {
+  .clearfix {
+    font-size: 0.5rem;
+  }
+
+  .header-right {
+    margin: 0.8rem 0;
+  }
+
+  .header-left {
+    position: relative;
+    top: 0.4rem;
+    left: 0.4rem;
+  }
+}
+
+/* main responsiveness */
+
+@media screen and (max-width: 760px) {
+  #google-logo {
+    width: 13.75rem;
+  }
+
+  .searchbar {
+    width: 30rem;
+    height: 1.87rem;
+    padding: 0.15rem;
+  }
+
+  #search {
+    height: 1.56rem;
+    width: 22.5rem;
+    top: -0.5rem;
+  }
+
+  #magnifier {
+    width: 1.25rem;
+    top: 0.125rem;
+    margin-bottom: 0.2rem;
+  }
+
+  #keyboard {
+    cursor: pointer;
+    vertical-align: text-top;
+    margin-left: 0.5rem;
+  }
+
+  #microphone {
+    height: 1.1rem;
+    vertical-align: super;
+    margin-left: -0.5rem;
+  }
+
+  .btn-1 {
+    height: 1.75rem;
+  }
+}
+
+/* footer responsiveness */
+
+@media screen and (max-width: 520px) {
+  .footer-left li {
+    margin: 0 0.25rem;
+  }
+
+  .footer-right li {
+    margin: 0 0.25rem;
+  }
+}
